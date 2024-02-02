@@ -40,7 +40,7 @@ public class HelloControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().string(hello));
     }
-[]
+
     @WithMockUser(roles="USER")
     @Test
     public void helloDto가_리턴된다() throws Exception {
